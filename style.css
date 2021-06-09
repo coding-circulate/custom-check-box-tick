@@ -1,0 +1,39 @@
+body {
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+input {
+    appearance: none;
+    outline: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #111;
+    box-shadow: -5px -5px 20px #ffffff1a,
+        5px 5px 10px #000000,
+        inset -2px -2px 5px #ffffff1a,
+        inset 2px 2px 5px #000000;
+    transition: 0.5s;
+}
+
+input:checked {
+    background: #63ff00;
+}
+
+input:checked:before {
+    content: "";
+    position: absolute;
+    left: 12px;
+    top: 5px;
+    width: 10px;
+    height: 20px;
+    border-bottom: 5px solid #111;
+    border-right: 5px solid #111;
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
